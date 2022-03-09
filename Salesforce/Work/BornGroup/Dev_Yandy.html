@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Document</title>
-</head>
-<body>
-    <p>Lovers Test Chat --brayan</p>
-  <style type='text/css'>
-    .embeddedServiceHelpButton .helpButton .uiButton {
-        background-color: #0E6E6A;
+  </head>
+  <body>
+    <p>Yandy Test Chat --Dev</p>
+    <style type='text/css'>
+      .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #9B6BA7;
         font-family: "Salesforce Sans", sans-serif;
-    }
-
-    .embeddedServiceHelpButton .helpButton .uiButton:focus {
-        outline: 1px solid #0E6E6A;
-    }
-
-    @font-face {
+      }
+    
+      .embeddedServiceHelpButton .helpButton .uiButton:focus {
+        outline: 1px solid #9B6BA7;
+      }
+    
+      @font-face {
         font-family: 'Salesforce Sans';
         src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
-            url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
-    }
-</style>
-
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
-    var initESW = function (gslbBaseURL) {
+          url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
+      }
+    </style>
+    
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript'>
+      var initESW = function (gslbBaseURL) {
         embedded_svc.settings.displayHelpButton = true; //Or false
         embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
@@ -50,32 +53,32 @@
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
         embedded_svc.init(
-            'https://plbygroupinc--brayan.my.salesforce.com',
-            'https://brayan-shopify6799.cs209.force.com',
-            gslbBaseURL,
-            '00D740000008ft7',
-            'Lovers_Agents',
-            {
-                baseLiveAgentContentURL: 'https://c.la5-c1cs-ia4.salesforceliveagent.com/content',
-                deploymentId: '5725e0000001vnY',
-                buttonId: '5735e0000001x8D',
-                baseLiveAgentURL: 'https://d.la5-c1cs-ia4.salesforceliveagent.com/chat',
-                eswLiveAgentDevName: 'Lovers_Agents',
-                isOfflineSupportEnabled: true
-            }
+          'https://plbygroupinc--dev.my.salesforce.com',
+          'https://dev-shopify6799.cs202.force.com',
+          gslbBaseURL,
+          '00D7i0000003e2D',
+          'Yandy_Agents',
+          {
+            baseLiveAgentContentURL: 'https://c.la3-c1cs-ia5.salesforceliveagent.com/content',
+            deploymentId: '5725e0000001vnY',
+            buttonId: '5735e0000001x88',
+            baseLiveAgentURL: 'https://d.la3-c1cs-ia5.salesforceliveagent.com/chat',
+            eswLiveAgentDevName: 'Yandy_Agents',
+            isOfflineSupportEnabled: true
+          }
         );
-    };
+      };
 
-    if (!window.embedded_svc) {
+      if (!window.embedded_svc) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://plbygroupinc--brayan.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.setAttribute('src', 'https://plbygroupinc--dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
         s.onload = function () {
-            initESW(null);
+          initESW(null);
         };
         document.body.appendChild(s);
-    } else {
+      } else {
         initESW('https://service.force.com');
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
